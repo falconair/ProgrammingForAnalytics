@@ -1,4 +1,4 @@
-- Anaconda installation: https://www.anaconda.com/
+- Anaconda installation: https://www.anaconda.com/distribution/
 - VS Code
   - Install Python extension: https://marketplace.visualstudio.com/items?itemName=ms-python.python
   ? AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl
