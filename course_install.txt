@@ -1,0 +1,21 @@
+- Anaconda installation: https://www.anaconda.com/
+- VS Code
+  - Install Python extension: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+  ? AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl
+    - Allows values of variables and output to be shown next to code
+  - Python Preview: https://marketplace.visualstudio.com/items?itemName=dongli.python-preview
+    - Shows diagram of which variables are pointing to which object in memory
+- Git: https://git-scm.com/downloads
+  - Use Visual Studio Code as Git's default editor
+- Github (and git on commandline): https://desktop.github.com
+
+- Open Anaconda prompt (at least on Windows)
+
+- Create conda enviornment for this class (python 3.6)
+  - conda env create -f environment.yml
+  - conda activate PythonForAnalytics
+
+- Install Jupyter Notebook extensions
+  #https://towardsdatascience.com/jupyter-tools-to-increase-productivity-7b3c6b90be09
+  - jupyter contrib nbextension install --user
+  - jupyter nbextensions_configurator enable --user
