@@ -18,6 +18,7 @@ dependencies:
   - bokeh   # charting package
   - feather-format # fast alternative to csv
   - flask   # web/api framework
+  - pylint
   - pip     # a more general python package installer
   - pip:
     - jupyter_contrib_nbextensions
