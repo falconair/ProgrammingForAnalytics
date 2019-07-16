@@ -22,4 +22,4 @@
 
 Optional (on GPU enabled ubuntu computers)
 - apt install nvidia-cuda-toolkit
-- pip install tensorflow-gpu==2.0.0-beta1
+- pip install tensorflow-gpu==2.0.0-beta1 
