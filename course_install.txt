@@ -19,3 +19,7 @@
   #https://towardsdatascience.com/jupyter-tools-to-increase-productivity-7b3c6b90be09
   - jupyter contrib nbextension install --user
   - jupyter nbextensions_configurator enable --user
+
+Optional (on GPU enabled ubuntu computers)
+- apt install nvidia-cuda-toolkit
+- pip install tensorflow-gpu==2.0.0-beta1
