@@ -7,6 +7,7 @@
     - Shows diagram of which variables are pointing to which object in memory
 - Git: https://git-scm.com/downloads
   - Use Visual Studio Code as Git's default editor
+  - To remember password: "git config credential.helper store"
 - Github (and git on commandline): https://desktop.github.com
 
 - Open Anaconda prompt (at least on Windows)
@@ -22,4 +23,4 @@
 
 Optional (on GPU enabled ubuntu computers)
 - apt install nvidia-cuda-toolkit
-- pip install tensorflow-gpu==2.0.0-beta1 
+- pip install tensorflow-gpu==2.0.0-beta1

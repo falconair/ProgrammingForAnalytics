@@ -17,6 +17,7 @@ dependencies:
   - altair  # charting package
   - bokeh   # charting package
   - feather-format # fast alternative to csv
+  - nb_conda
   - flask   # web/api framework
   - pylint
   - pip     # a more general python package installer
