@@ -16,7 +16,7 @@ dependencies:
   - seaborn # charting package
   - altair  # charting package
   - bokeh   # charting package
-  - feather-format # fast alternative to csv
+  #- feather-format # fast alternative to csv
   - nb_conda
   - flask   # web/api framework
   - pylint
