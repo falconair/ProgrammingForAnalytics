@@ -9,7 +9,13 @@ sys	0m45.163s
 
 Size of Taxi_Trips.csv.gz:          14G
 Size of taxi_trips_small.csv.gz:     1G
-Size of taxi_trips_small.csv:      3.4G
+Size of taxi_trips_smaller.csv.gz  154M
 
-Lines in Taxi_Trips.csv.gz:         113,115,259
-Lines in taxi_trips_small.csv.gz:    11,311,525
+Size of Taxi_Trips.csv:            ????
+Size of taxi_trips_small.csv:      3.4G
+Size of taxi_trips_smaller.csv:    456M
+
+Lines in Taxi_Trips.csv.gz:         113,115,259 (100 million)
+Lines in taxi_trips_small.csv.gz:    11,311,525 (11 million)
+Lines in taxi_trips_smaller.csv.gz:   1,131,152 (1 million)
+
