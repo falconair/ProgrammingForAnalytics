@@ -15,10 +15,13 @@ highlightTheme: "dracula"
 
 ---
 
-## Well known maxim in computer science:
-"Premature optimization is the root of all evil" - Don Knuth
+## Well known maxims in computer science:
+*"Premature optimization is the root of all evil"* - Don Knuth
 
-In other words, don't worry about performance, until you have to worry about performance.
+*"Developers themselves highlight the fact that those doing research should exercise caution when using such microbenchmarks"* - Wikipedia article about the benchmark game
+
+
+*"You don't have to be an engineer to be be a racing driver, but you do have to have Mechanical Sympathy."* Jackie Stewart, racing driver - Quoted by Martin Thompson
 
 ---
 
@@ -29,6 +32,7 @@ The pyramid of latency varies by orders of magnitude
 
 ## Latency numbers every programmer should know
 (source: https://gist.github.com/hellerbarde/2843375)
+(originally by Jeff Dean)
 
 ```a
 L1 cache reference ......................... 0.5 ns
