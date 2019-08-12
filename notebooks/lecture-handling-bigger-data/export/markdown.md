@@ -1,8 +1,3 @@
----
-theme: "white"
-transition: "fade"
-highlightTheme: "dracula"
----
 
 # Handing bigger data with Pandas
 
@@ -53,35 +48,57 @@ Send packet CA->Holland->CA ... 150,000,000 ns = 150 ms
 
 ```a
 
--L1 cache reference                  0.5 s        
-    One heart beat (0.5 s)
--Branch mispredict                   5 s          
-    Yawn
--L2 cache reference                  7 s          
-    Long yawn
--Mutex lock/unlock                   25 s         
-    Making a coffee
--Main memory reference               100 s        
-    Brushing your teeth
--Compress 1K bytes with Zippy        50 min       
-    One episode of a TV show (including ad breaks)
--Send 2K bytes over 1 Gbps network   5.5 hr       
-    From lunch to end of work day
+-L1 cache reference                  0.5 s         
+One heart beat (0.5 s)
+
+-Branch mispredict                   5 s           
+Yawn
+
+-L2 cache reference                  7 s           
+Long yawn
+
+-Mutex lock/unlock                   25 s          
+Making a coffee
+
+-Main memory reference               100 s         
+Brushing your teeth
+
+-Compress 1K bytes with Zippy        50 min        
+One episode of a TV show (including ad breaks)
+```
+
+---
+
+```a
+-Send 2K bytes over 1 Gbps network   5.5 hr        
+From lunch to end of work day
+
 -SSD random read                     1.7 days      
-    A normal weekend
+A normal weekend
+
 -Read 1 MB sequentially from memory  2.9 days      
-    A long weekend
+A long weekend
+
 -Round trip within same datacenter   5.8 days      
-    A medium vacation
+A medium vacation
+
 -Read 1 MB sequentially from SSD    11.6 days      
-    Waiting for almost 2 weeks for a delivery
+Waiting for almost 2 weeks for a delivery
+```
+
+---
+
+```a
 -Disk seek                           16.5 weeks    
-    A semester in university
+A semester in university
+
 -Read 1 MB sequentially from disk    7.8 months    
-    Almost producing a new human being
+Almost producing a new human being
+
 -The above 2 together                1 year
+
 -Send packet CA->Netherlands->CA     4.8 years     
-    Average time it takes to complete a bachelor's degree
+Average time it takes to complete a bachelor's degree
 ```
 
 ---
