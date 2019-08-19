@@ -3,6 +3,7 @@ theme: "white"
 transition: "fade"
 highlightTheme: "dracula"
 center: false
+marp: true
 ---
 
 # Understanding Version Control
@@ -38,6 +39,15 @@ Once installed, run the following at the command line:
 
 ---
 
+# [Task] Install VS Code
+
+https://code.visualstudio.com/
+
+* Install extension "python" (from Microsoft)
+
+
+---
+
 # What is the difference between Git and GitHub?
 
 CVS -> SVN -> Git
@@ -53,16 +63,25 @@ https://github.com/falconair
 
 ---
 
+# [Task] Send me your GitHub user names (NOT passwords!)
+
+https://forms.gle/wgwV1ztzFqD1Bz9x7
+
+---
+
 # [Task] Install GitHub's software
 
 https://desktop.github.com/
 
 ---
 
+# Show Leadership
+
 Data science departments are 5-15 years behind software engineering in professional infrastructure. Be a leader in your field by learning from programmers.
 
 ---
 
+# Professional work vs hacking
 
 Professional work requires more than coding and building models. Here are some _extra_ things you need to do as a professional (which are within scope of this presentation):
 
@@ -91,7 +110,7 @@ Professional work requires more than coding and building models. Here are some _
 
 ---
 
-# [TASK] Create a new "repo"
+# [Task] Create a new "repo"
 * Create a new GitHub repository (upper right hand corner)
 * Call it "PfA_test" 
 * Keep it public
@@ -100,3 +119,68 @@ Professional work requires more than coding and building models. Here are some _
 * Use command line or Desktop app to "clone" the repo to your disk
 
 ```git clone https://github.com/<yourname>/PfA_test.git```
+
+---
+
+# [Task] Update something in your project
+
+Add this to readme\.md (try using vs code)
+```csv
+# My name is Shahbaz 
+
+## This is a git experiment
+
+This is some random text
+```
+
+---
+
+# [Task] _Commit_ your code to your _local_ repo
+
+Using VS Code, GitHub Desktop or command line, "commit" your code
+
+Command line 
+
+```git commit -m "Adds content to readme file"```
+
+---
+
+Your code is now "saved," along with a text describing the change. No need for multiple folders.
+
+---
+
+# [Task] _Push_ this change to GitHub 
+
+Using VS Code, GitHub Desktop or command line, "push" your code to GitHub
+
+Command line
+
+```git push```
+
+---
+
+Your code is now 'backed-up' at a remote location
+
+---
+
+# [Task] Update my readme.md file and add your name
+
+* Clone my repo `<repo name>`
+* Open my readme.md file using VS Code
+* Add your name to the list (don't remove anyone else's name)
+* Commit code and push it
+
+(You may get merge conflicts, VS Code makes it easier))
+
+---
+
+You have now learned how to 
+* save various versions of your code
+* back up your code
+* collaborate with your colleagues
+
+---
+
+A couple of tools you should be aware of:
+* Diff
+* nb_diff
