@@ -12,14 +12,31 @@ by Shahbaz Chaudhary
 
 ---
 
-Let's take a quick look at GitHub
+# GitHub as a code repository
 https://github.com/pandas-dev/pandas
 
-* Check out recent commits
+* Check out recent commits, notice the files changed and their diffs
 * Take a look at a user who recently submitted a commit
 * Check out their projects, as if you were looking to hire them
 
-Who are these people?
+Top contributors
+https://github.com/pandas-dev/pandas/graphs/contributors
+
+Branching off and doing work
+https://github.com/pandas-dev/pandas/network
+
+---
+
+# GitHub as a way to track issues
+
+https://github.com/pandas-dev/pandas/issues
+
+* Take a look at the open issues
+* Take a look at closed issues and how they connect to commits
+
+---
+
+# GitHub as your resume?
 
 * https://github.com/wesm
 * https://github.com/hadley
@@ -120,7 +137,7 @@ Professional work requires more than coding and building models. Here are some _
 
 ---
 
-# [Task] Create a new "repo"
+# [Task] Create a new "repo" (repository)
 * Create a new GitHub repository (upper right hand corner)
 * Call it "PfA_test" 
 * Keep it public
@@ -147,7 +164,9 @@ This is some random text
 
 # [Task] _Commit_ your code to your _local_ repo
 
-Using VS Code, GitHub Desktop or command line, "commit" your code
+Using VS Code, GitHub Desktop or command line, "commit" your code`
+
+To "commit" your code means to tell Git to start keeping track of it.
 
 Command line 
 
