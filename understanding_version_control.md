@@ -30,12 +30,29 @@ Who are these people?
 
 https://git-scm.com/downloads
 
+**Mac Users** Download git file, _right click_ and select open (don't double click)
+
+![](assets/macgit-03-open.png)
+Then follow prompts and keep selecting default options
+
+Step by step instructions: https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/
+
+---
+
+# [Task] Configure Git (Optional)
 Once installed, run the following at the command line:
 
 ```git config --global user.name examplename```
 
 ```git config --global user.email user@example.com```
 
+---
+
+# [Task] Install GitHub's software
+
+https://desktop.github.com/
+
+![](assets/github-desktop-screenshot-windows.png)
 
 ---
 
@@ -44,7 +61,6 @@ Once installed, run the following at the command line:
 https://code.visualstudio.com/
 
 * Install extension "python" (from Microsoft)
-
 
 ---
 
@@ -66,12 +82,6 @@ https://github.com/falconair
 # [Task] Send me your GitHub user names (NOT passwords!)
 
 https://forms.gle/wgwV1ztzFqD1Bz9x7
-
----
-
-# [Task] Install GitHub's software
-
-https://desktop.github.com/
 
 ---
 
@@ -184,3 +194,9 @@ You have now learned how to
 A couple of tools you should be aware of:
 * Diff
 * nb_diff
+
+---
+
+#References
+
+* Mac open screenshot from https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/
