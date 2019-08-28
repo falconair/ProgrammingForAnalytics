@@ -4,23 +4,28 @@
 #conda env update --file environment.yml
 #conda activate PythonForAnalytics
 #conda update --all # update all packages
-name: ProgrammingForAnalytics
+name: PythonForAnalytics
 channels:
   - defaults
   - conda-forge
 dependencies:
   - python=3.6
+  - pylint
+  - pip     # a more general python package installer
   - openssl # technical infrastructure
+  - flask   # web/api framework
+  - pyarrow # fast alternative to csv
+  # Data science libraries
   - pandas  # dataframe library
   - scikit-learn # collection of machine learning algos
+  # Visualization libraries
   - seaborn # charting package
   - altair  # charting package
   - bokeh   # charting package
-  #- feather-format # fast alternative to csv
-  - nb_conda
-  - flask   # web/api framework
-  - pylint
-  - pip     # a more general python package installer
+  - holoviz   # meta package which installs holoviews, panel, hvplot, etc.
+  # Notebook extensions
+  - nb_conda # load conda environments in jupyter
+  - rise     # presentations in jupyter
   - pip:
     - jupyter_contrib_nbextensions
     - https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master

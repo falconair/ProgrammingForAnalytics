@@ -1,3 +1,9 @@
+---
+theme: "white"
+transition: "fade"
+marp: true
+highlightTheme: "dracula"
+---
 
 # Handing bigger data with Pandas
 
@@ -10,10 +16,13 @@
 
 ---
 
-## Well known maxim in computer science:
-"Premature optimization is the root of all evil" - Don Knuth
+## Well known maxims in computer science:
+*"Premature optimization is the root of all evil"* - Don Knuth
 
-In other words, don't worry about performance, until you have to worry about performance.
+*"Developers themselves highlight the fact that those doing research should exercise caution when using such microbenchmarks"* - Wikipedia article about the benchmark game
+
+
+*"You don't have to be an engineer to be be a racing driver, but you do have to have Mechanical Sympathy."* Jackie Stewart, racing driver - Quoted by Martin Thompson
 
 ---
 
@@ -24,6 +33,7 @@ The pyramid of latency varies by orders of magnitude
 
 ## Latency numbers every programmer should know
 (source: https://gist.github.com/hellerbarde/2843375)
+(originally by Jeff Dean)
 
 ```a
 L1 cache reference ......................... 0.5 ns
@@ -48,57 +58,35 @@ Send packet CA->Holland->CA ... 150,000,000 ns = 150 ms
 
 ```a
 
--L1 cache reference                  0.5 s         
-One heart beat (0.5 s)
-
--Branch mispredict                   5 s           
-Yawn
-
--L2 cache reference                  7 s           
-Long yawn
-
--Mutex lock/unlock                   25 s          
-Making a coffee
-
--Main memory reference               100 s         
-Brushing your teeth
-
--Compress 1K bytes with Zippy        50 min        
-One episode of a TV show (including ad breaks)
-```
-
----
-
-```a
--Send 2K bytes over 1 Gbps network   5.5 hr        
-From lunch to end of work day
-
+-L1 cache reference                  0.5 s        
+    One heart beat (0.5 s)
+-Branch mispredict                   5 s          
+    Yawn
+-L2 cache reference                  7 s          
+    Long yawn
+-Mutex lock/unlock                   25 s         
+    Making a coffee
+-Main memory reference               100 s        
+    Brushing your teeth
+-Compress 1K bytes with Zippy        50 min       
+    One episode of a TV show (including ad breaks)
+-Send 2K bytes over 1 Gbps network   5.5 hr       
+    From lunch to end of work day
 -SSD random read                     1.7 days      
-A normal weekend
-
+    A normal weekend
 -Read 1 MB sequentially from memory  2.9 days      
-A long weekend
-
+    A long weekend
 -Round trip within same datacenter   5.8 days      
-A medium vacation
-
+    A medium vacation
 -Read 1 MB sequentially from SSD    11.6 days      
-Waiting for almost 2 weeks for a delivery
-```
-
----
-
-```a
+    Waiting for almost 2 weeks for a delivery
 -Disk seek                           16.5 weeks    
-A semester in university
-
+    A semester in university
 -Read 1 MB sequentially from disk    7.8 months    
-Almost producing a new human being
-
+    Almost producing a new human being
 -The above 2 together                1 year
-
 -Send packet CA->Netherlands->CA     4.8 years     
-Average time it takes to complete a bachelor's degree
+    Average time it takes to complete a bachelor's degree
 ```
 
 ---
