@@ -19,7 +19,12 @@ Execute these statements at the terminal (Windows users should use Anaconda Prom
 ## Install Git and Git Bash
 Please intall Git, a version control sotware, from this website: https://git-scm.com/downloads (you are ok to use default settings)
 
+Note that this is a command-line tool. Once installed, you may not see a new icon to click. We will install a Desktop client to remedy this.
+
 Although we don't make heavy use of version control, you will be introduced to the concept. Installing Git also installs "Git Bash," and comand line environment which simulates Unix/Linux. We will do several exercises which will require this environment.
+
+#### Additional steps:
+Install a _Graphical_ interface to Git from this website: https://desktop.github.com/
 
 ## Install Visual Studio _Code_
 Please install Visual Studio _Code_ from website: https://code.visualstudio.com/

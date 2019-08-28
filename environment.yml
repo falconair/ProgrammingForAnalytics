@@ -11,6 +11,7 @@ channels:
 dependencies:
   - python=3.6
   - pylint
+  - wget    # easy way to download files
   - pip     # a more general python package installer
   - openssl # technical infrastructure
   - flask   # web/api framework
