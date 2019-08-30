@@ -11,7 +11,6 @@ channels:
 dependencies:
   - python=3.6
   - pylint
-  - wget    # easy way to download files
   - pip     # a more general python package installer
   - openssl # technical infrastructure
   - flask   # web/api framework
@@ -34,4 +33,7 @@ dependencies:
     - https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
     - jupyter_nbextensions_configurator #enable nb_conda to allow use of custom conda envs
     - Flask-Testing
+    - nbdime # makes it easy to diff rendered notebooks
+    - pixiedust
+    - wget    # easy way to download files
     #- kedro #McKinsey data science template
