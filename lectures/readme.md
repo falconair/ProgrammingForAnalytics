@@ -20,3 +20,7 @@ Introduces Git and includes several exercises. This lecture was written for more
 ### bigger_data_pandas
 Once students are comfortable with Pandas, this course shows how data measuring gigabytes can be handled in Python.
 
+## Miscellaneous lectures
+
+### Data Science in Python
+An overview of Python, numpy, pandas and scikit-learn (one hour long)
