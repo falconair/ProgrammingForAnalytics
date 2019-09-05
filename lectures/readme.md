@@ -12,6 +12,9 @@ Starts with a calculator, familiar and easy to understand. Then identifies vario
 ### first_programs
 Starts to introduce Python. Shows several complete programs, each introducing new concepts and slightly more complexity
 
+### intro_to_jupyter
+A very basic and brief introduction to Jupyter notebooks
+
 ## Lectures appropriate for second course in programming
 
 ### git_version_control

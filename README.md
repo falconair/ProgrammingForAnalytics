@@ -9,6 +9,8 @@ _Note Mac users: Once software is downloaded, if you double click to launch it, 
 Please install Python 3.x from this website: https://www.anaconda.com/distribution/
 (do not install 2.7)
 
+Accept all default prompts, **except** "Add Anaconda to my PATH envrionment variable." Make sure this is checked.
+
 Anaconda's distribution of Python is widely used in the industry, particularly among data scientists. This distribution makes it easy to use many libraries and packages for data analysis, building models, visualization, etc.
 
 #### Aditional steps:
@@ -26,13 +28,13 @@ sum(range(1_000_000))
 ```
 4. Execute this code:
 ```
-from psutil import virtual_memory, disk_usage, cpu_count
+from psutil import virtual_memory, disk_usage, cpu_count, os
 
 bytes_in_gb = 1024**3
 
 print("Memory:\t",round(virtual_memory().total/bytes_in_gb,4), "Gigabytes")
 print("Disk:\t",round(disk_usage(os.path.abspath(os.sep)).total/bytes_in_gb,4), "Gigabytes")
-print("Cpus:\t", cpu_count())
+print("CPUs:\t", cpu_count())
 ```
 
 ## Install Git and Git Bash [Optional on day 1]
@@ -43,7 +45,8 @@ Note that this is a command-line tool. Once installed, you may not see a new ico
 Although we don't make heavy use of version control, you will be introduced to the concept. Installing Git also installs "Git Bash," and comand line environment which simulates Unix/Linux. We will do several exercises which will require this environment.
 
 #### Additional steps:
-Install a _Graphical_ interface to Git from this website: https://desktop.github.com/
+1. Install a _Graphical_ interface to Git from this website: https://desktop.github.com/
+2. [Windows users only] Create or edit a file called `.profile` in your home directory (c:\Users\your_username\\.profile) and add a new line containing the word `cd`
 
 ## Install Visual Studio _Code_
 Please install Visual Studio _Code_ from website: https://code.visualstudio.com/
@@ -61,4 +64,5 @@ Install Python extensions from https://marketplace.visualstudio.com/items?itemNa
 Available at https://github.com/falconair/ProgrammingForAnalytics/blob/master/environment.yml
 Also available in the repository you cloned in the previous step.
 
+Using Mac `terminal` or Windows `command prompt`, change to the directory you just cloned and execute this command: 
 `conda env update --file environment.yml`

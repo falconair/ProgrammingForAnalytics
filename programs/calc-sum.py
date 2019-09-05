@@ -1,11 +1,19 @@
 import gzip
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("ratings_file")
+args = parser.parse_args()
+
+ratings_file = args.ratings_file
 
 counter = 0
 sum_rating = 0
 len_rating = 0
 
 #userId,movieId,rating,timestamp
-with gzip.open('datasets/the-movies-dataset/ratings.csv.gz','rt', encoding='utf8') as infile:
+#with gzip.open('../datasets/the-movies-dataset/ratings_small.csv.gz','rt', encoding='utf8') as infile:
+with gzip.open(ratings_file,'rt', encoding='utf8') as infile:
     for line in infile:
         counter += 1
         if(counter ==1): 
