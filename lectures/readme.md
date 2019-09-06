@@ -15,6 +15,9 @@ Starts to introduce Python. Shows several complete programs, each introducing ne
 ### intro_to_jupyter
 A very basic and brief introduction to Jupyter notebooks
 
+### all_of_python_basics
+First introduction to much of Python and basic programming language constructs. This material should be enough for students to write basic programs, understand important terminology (to help in searching for answers on the web).
+
 ## Lectures appropriate for second course in programming
 
 ### git_version_control
