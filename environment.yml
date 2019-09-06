@@ -36,4 +36,5 @@ dependencies:
     - nbdime # makes it easy to diff rendered notebooks
     - pixiedust
     - wget    # easy way to download files
+    #- lolviz # visualize data structures (only useful for teaching and learning)
     #- kedro #McKinsey data science template
