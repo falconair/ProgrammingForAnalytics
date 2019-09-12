@@ -9,6 +9,10 @@ _Note Mac users: Once software is downloaded, if you double click to launch it, 
 Please install Python 3.x from this website: https://www.anaconda.com/distribution/
 (do not install 2.7)
 
+Mac users:
+Accept all default prompts
+
+Windows users:
 Accept all default prompts, **except** "Add Anaconda to my PATH envrionment variable." Make sure this is checked.
 
 Anaconda's distribution of Python is widely used in the industry, particularly among data scientists. This distribution makes it easy to use many libraries and packages for data analysis, building models, visualization, etc.
@@ -47,11 +51,6 @@ Although we don't make heavy use of version control, you will be introduced to t
 #### Additional steps:
 1. Install a _Graphical_ interface to Git from this website: https://desktop.github.com/
 2. [Windows users only] Create or edit a file called `.profile` in your home directory (c:\Users\your_username\\.profile) and add a new line containing the word `cd`
-
-## Install Visual Studio _Code_
-Please install Visual Studio _Code_ from website: https://code.visualstudio.com/
-
-Although we will mostly use Jupyter to edit code, VS Code is extremely handy for python developers
 
 #### Additional steps:
 Install Python extensions from https://marketplace.visualstudio.com/items?itemName=ms-python.python (visit that page and click "Install")
