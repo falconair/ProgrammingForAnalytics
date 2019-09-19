@@ -18,6 +18,16 @@ A very basic and brief introduction to Jupyter notebooks
 ### all_of_python_basics
 First introduction to much of Python and basic programming language constructs. This material should be enough for students to write basic programs, understand important terminology (to help in searching for answers on the web).
 
+#### all_of_python_basic_functions
+Deeper dive into function creation. Also learn about asserts and test first methodology. A short tutorial on using debuggers.
+
+#### all_of_python_arithmetic_and_strings
+Usees all bsaic operators, including the modulus and power operators. Shows how mod can be used in algorithms.
+Shows how to use many popular functions and string formatters.
+
+#### all_of_python_libraries_filesystem
+#### all_of_python_libraries_random
+
 ## Lectures appropriate for second course in programming
 
 ### git_version_control
