@@ -25,10 +25,13 @@ Deeper dive into function creation. Also learn about asserts and test first meth
 Introduces multiple assignment and tuples
 
 ##### all_of_python_numbers
-Usees all bsaic operators, including the modulus and power operators. Shows how mod can be used in algorithms.
+Uses all bsaic operators, including the modulus and power operators. Shows how mod can be used in algorithms.
 
 ##### all_of_python_strings
 Shows how to use many popular functions and string formatters.
+
+##### all_of_python_basic_plotting
+Very basic introduction to plotting. Needed for assignment on random numbers.
 
 ##### all_of_python_libraries_filesystem
 ##### all_of_python_libraries_random
