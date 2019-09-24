@@ -18,11 +18,11 @@ A very basic and brief introduction to Jupyter notebooks
 ### all_of_python_basics
 First introduction to much of Python and basic programming language constructs. This material should be enough for students to write basic programs, understand important terminology (to help in searching for answers on the web).
 
-##### all_of_python_basic_functions
-Deeper dive into function creation. Also learn about asserts and test first methodology. A short tutorial on using debuggers.
-
 ##### all_of_python_variable_assignment_and_tuples
 Introduces multiple assignment and tuples
+
+##### all_of_python_basic_functions
+Deeper dive into function creation. Also learn about asserts and test first methodology. A short tutorial on using debuggers.
 
 ##### all_of_python_numbers
 Uses all bsaic operators, including the modulus and power operators. Shows how mod can be used in algorithms.
@@ -33,8 +33,22 @@ Shows how to use many popular functions and string formatters.
 ##### all_of_python_basic_plotting
 Very basic introduction to plotting. Needed for assignment on random numbers.
 
-##### all_of_python_libraries_filesystem
 ##### all_of_python_libraries_random
+Students will write this and as a tutorial for others who know random numbers, and basics of python, but not this library.
+
+##### all_of_python_basic_dictionaries
+Deeper dive into dictionaries, including .get(,), defaultdict, etc.
+
+##### all_of_python_basic_lists
+Much deeper dive into lists. Separate list functions from stack functions.
+
+##### all_of_python_basic_list_comprehensions
+Introduces list comprehensions.
+
+##### all_of_python_basic_classes
+First introduction to classes so object.method() notation makes sense. Introduce enough inheritence to students get how functionality can be shared (such as measuring accuracy on any scikit-learn model). Introduce how operators are encoded as functions so numpy/pandas don't seem magical.
+
+##### all_of_python_libraries_filesystem
 
 ## Lectures appropriate for second course in programming
 

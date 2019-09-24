@@ -4,7 +4,7 @@ import random
 src_dst = {}
 prev_word = ""
 
-with gzip.open('../datasets/shakespeare/shakespeare.txt.gz','rt', encoding='utf8') as infile:
+with gzip.open('datasets/shakespeare/shakespeare.txt.gz','rt', encoding='utf8') as infile:
     for line in infile:
         toks = line\
             .strip()\
