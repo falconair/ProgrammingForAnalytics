@@ -48,13 +48,16 @@ Introduces list comprehensions.
 ##### all_of_python_basic_classes
 First introduction to classes so object.method() notation makes sense. Introduce enough inheritence to students get how functionality can be shared (such as measuring accuracy on any scikit-learn model). Introduce how operators are encoded as functions so numpy/pandas don't seem magical.
 
-##### all_of_python_loops
+~~##### all_of_python_loops~~
 Introduce the while loop and give extended examples of the for loop. Introduce breaking out of loops, skipping iterations and the else clause.
 
-##### all_of_python_more_functions
+~~##### all_of_python_more_functions~~
 Introduce keyword arguments, optional arguments, notation to pass through arguments. Introduce lambdas and map/reduce/filter functions.
 
-##### all_of_python_libraries_filesystem
+~~##### all_of_python_libraries_filesystem~~
+
+### Intro to Pandas
+Introduces the data science library Pandas. It shows how to read csv files, how to view a summary of data, how to explore data using charting libraries, etc.
 
 ## Lectures appropriate for second course in programming
 
