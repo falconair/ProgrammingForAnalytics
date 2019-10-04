@@ -46,18 +46,33 @@ Much deeper dive into lists. Separate list functions from stack functions.
 Introduces list comprehensions.
 
 ##### all_of_python_basic_classes
-First introduction to classes so object.method() notation makes sense. Introduce enough inheritence to students get how functionality can be shared (such as measuring accuracy on any scikit-learn model). Introduce how operators are encoded as functions so numpy/pandas don't seem magical.
+First introduction to classes so object.method() notation makes sense. Introduce enough inheritence to students get how functionality can be shared (such as measuring accuracy on any scikit-learn model). ~~Introduce how operators are encoded as functions so numpy/pandas don't seem magical.~~
 
-~~##### all_of_python_loops~~
-Introduce the while loop and give extended examples of the for loop. Introduce breaking out of loops, skipping iterations and the else clause.
+##### all_of_python_loops
+Introduce the while loop and give extended examples of the for loop. Introduce breaking out of loops and skipping iterations.
+
+#### all_of_python_conditionals_and_None
+Introduce None. Introduce the elif keyword, describe short-circuiting. Mention case statements, which don't exist in Python. 
+
+~~##### all_of_python_iterators~~
+Introduce iterators and itertools.
 
 ~~##### all_of_python_more_functions~~
-Introduce keyword arguments, optional arguments, notation to pass through arguments. Introduce lambdas and map/reduce/filter functions.
+Introduce keyword arguments, optional arguments, notation to pass through arguments, docstrings. Introduce lambdas and map/reduce/filter functions.
 
 ~~##### all_of_python_libraries_filesystem~~
 
+### Explore distribution characters in male and female names
+In-class exercise to download files containing male and female names, write code to draw histograms of characters in male and female names.
+
 ### Intro to Pandas
 Introduces the data science library Pandas. It shows how to read csv files, how to view a summary of data, how to explore data using charting libraries, etc.
+
+### Intro to Numpy
+Introduces the data science library Numpy.
+
+### Gradient Descent
+In-class, assisted, exercise to write the gradient descent algorithm.
 
 ## Lectures appropriate for second course in programming
 

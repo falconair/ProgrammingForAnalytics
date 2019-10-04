@@ -4,7 +4,7 @@
 #conda env update --file environment.yml
 #conda activate PythonForAnalytics
 #conda update --all # update all packages
-#name: PythonForAnalytics
+name: msca
 channels:
   - defaults
   - conda-forge
@@ -28,6 +28,7 @@ dependencies:
   - nb_conda # load conda environments in jupyter
   - rise     # presentations in jupyter
   - tqdm
+  - nbtutor # brings pythontutor into jupyter, execute `%load_ext nbtutor` to load extension, `%%nbtutor` to evaluate cell (`%%nbtutor -r` to reset variables)
   - pip:
     - jupyter_contrib_nbextensions
     - https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
