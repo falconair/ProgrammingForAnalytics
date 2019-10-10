@@ -51,14 +51,14 @@ First introduction to classes so object.method() notation makes sense. Introduce
 ##### all_of_python_loops
 Introduce the while loop and give extended examples of the for loop. Introduce breaking out of loops and skipping iterations.
 
-#### all_of_python_conditionals_and_None
+##### all_of_python_conditionals_and_None
 Introduce None. Introduce the elif keyword, describe short-circuiting. Mention case statements, which don't exist in Python. 
 
 ~~##### all_of_python_iterators~~
 Introduce iterators and itertools.
 
 ~~##### all_of_python_more_functions~~
-Introduce keyword arguments, optional arguments, notation to pass through arguments, docstrings. Introduce lambdas and map/reduce/filter functions.
+Introduce keyword arguments, optional arguments, notation to pass through arguments, docstrings. Introduce lambdas and map/reduce/filter functions. Introduce higher order functions.
 
 ~~##### all_of_python_libraries_filesystem~~
 

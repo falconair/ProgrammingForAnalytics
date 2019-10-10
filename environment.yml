@@ -19,9 +19,10 @@ dependencies:
   - pandas  # dataframe library
   - scikit-learn # collection of machine learning algos
   # Visualization libraries
-  - seaborn # charting package
-  - altair  # charting package
+  - seaborn # charting package which is built on top of matplotlib
+  - altair  # charting package which provides a python interface to the vega-lite library
   - bokeh   # charting package
+  - bqplot  # charting package from bloomberg
   #- pyviz     # related to holoviz?
   #- holoviz   # meta package which installs holoviews, panel, hvplot, etc.
   # Notebook extensions
