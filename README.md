@@ -23,7 +23,7 @@ Execute these statements at the terminal (Windows users should use Anaconda Prom
   - `jupyter nbextensions_configurator enable --user`
 
 Once installed, please start jupyter notebook and execute code provided below
-1. Type `jupyter notebook` at the command line (Anacnoda Prompt in windows) or start notebook from Anaconda's admin
+1. Start `Anaconda Navigator` and click `Launch` on the panel labeled `Jupyter Notebook`
 2. Create new notebook from the web interface
 3. Execute this code:
 ```
@@ -40,6 +40,27 @@ print("Memory:\t",round(virtual_memory().total/bytes_in_gb,4), "Gigabytes")
 print("Disk:\t",round(disk_usage(os.path.abspath(os.sep)).total/bytes_in_gb,4), "Gigabytes")
 print("CPUs:\t", cpu_count())
 ```
+
+## Install all packages in environment.yml
+Available at https://github.com/falconair/ProgrammingForAnalytics/blob/master/environment.yml
+Also available in the repository you cloned in the previous step.
+
+Using Mac `terminal` or Windows `command prompt`, change to the directory you just cloned and execute this command: 
+`conda env update --file environment.yml`
+
+## Install RStudio
+Please install R and RStudio.
+
+1. Install `R` from this address: https://cran.rstudio.com/
+2. Install RStudio from this address: https://rstudio.com/
+
+### Additional steps
+1. Start RStudio
+2. Follow directions at: https://irkernel.github.io/installation/#binary-panel
+
+(`install.packages('IRkernel')` then `IRkernel::installspec()
+` for non-mac computers)
+
 
 ## Install Git and Git Bash [Optional on day 1]
 Please intall Git, a version control sotware, from this website: https://git-scm.com/downloads (you are ok to use default settings)
@@ -59,9 +80,3 @@ Install Python extensions from https://marketplace.visualstudio.com/items?itemNa
 1. Visit this web page: https://github.com/falconair/ProgrammingForAnalytics
 2. Click "Clone or download" and pick the "Download ZIP" option (unless you already have a GitHub account)
 
-## Install all packages in environment.yml
-Available at https://github.com/falconair/ProgrammingForAnalytics/blob/master/environment.yml
-Also available in the repository you cloned in the previous step.
-
-Using Mac `terminal` or Windows `command prompt`, change to the directory you just cloned and execute this command: 
-`conda env update --file environment.yml`
