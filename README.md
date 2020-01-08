@@ -73,6 +73,9 @@ Although we don't make heavy use of version control, you will be introduced to t
 1. Install a _Graphical_ interface to Git from this website: https://desktop.github.com/
 2. [Windows users only] Create or edit a file called `.profile` in your home directory (c:\Users\your_username\\.profile) and add a new line containing the word `cd`
 
+## Install Visual Studio Code
+Please install Visual Studio Code from https://code.visualstudio.com/
+
 #### Additional steps:
 Install Python extensions from https://marketplace.visualstudio.com/items?itemName=ms-python.python (visit that page and click "Install")
 
