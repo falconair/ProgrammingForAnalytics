@@ -3,15 +3,17 @@ import logging
 import requests
 import json
 
+URL = "https://firestore.googleapis.com/v1/projects/jupyter-post-cell/databases/(default)/documents/exercises"
+
 @magics_class
 class PostContent(Magics):
 
     @line_cell_magic
     def post_content(self, line, cell=None):
         if(line.startswith("register")):
-           _, user, url =  line.split(" ")
+           _, user =  line.strip().split(" ")
            self.user = user
-           self.url  = url
+           self.url  = URL
            print("Registering")
         else:
             exercise = line.strip()
@@ -22,9 +24,9 @@ class PostContent(Magics):
 
                 headers = {'Content-Type': 'application/json'}
 
-                print(cell)
-                print(json.dumps(data))
-                
+                #print(cell)
+                #print(json.dumps(data))
+
                 resp = requests.post(self.url, data=json.dumps(data), headers=headers)
 
                 if(resp.ok): print("cell posted for evaluation")
