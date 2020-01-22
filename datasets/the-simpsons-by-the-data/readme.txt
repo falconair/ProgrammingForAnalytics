@@ -1,1 +1,0 @@
-https://www.kaggle.com/wcukierski/the-simpsons-by-the-data

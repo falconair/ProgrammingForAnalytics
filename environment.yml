@@ -4,7 +4,7 @@
 #conda env update --file environment.yml
 #conda activate PythonForAnalytics
 #conda update --all # update all packages
-name: msca
+#name: msca
 channels:
   - defaults
   - conda-forge

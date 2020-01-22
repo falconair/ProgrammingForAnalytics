@@ -14,7 +14,7 @@ class PostContent(Magics):
            _, user =  line.strip().split(" ")
            self.user = user
            self.url  = URL
-           print("Registering")
+           print("Registered")
         else:
             exercise = line.strip()
             try:

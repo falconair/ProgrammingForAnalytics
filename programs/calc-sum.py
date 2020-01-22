@@ -2,26 +2,24 @@ import gzip
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("ratings_file")
+parser.add_argument("infile")
 args = parser.parse_args()
 
-ratings_file = args.ratings_file
+infile = args.infile
 
-counter = 0
-sum_rating = 0
-len_rating = 0
+jon = 0 #variable containing Jon's score
+arya = 0 #variable containing Arya's score
 
-#userId,movieId,rating,timestamp
-#with gzip.open('../datasets/the-movies-dataset/ratings_small.csv.gz','rt', encoding='utf8') as infile:
-with gzip.open(ratings_file,'rt', encoding='utf8') as infile:
-    for line in infile:
-        counter += 1
-        if(counter ==1): 
-            continue
-        cleaned_line = line.strip()
-        #print(cleaned_line)
-        rating = cleaned_line.split(",")[2]
-        sum_rating += float(rating)
-        len_rating += 1
+#Open file
+file = open(infile, encoding='utf8')
 
-print("Averaging rating: ",sum_rating/len_rating)
+#Go through each line in file
+for line in file:
+  tokens = line.split(',') #separate line into columns
+  if tokens[4]=="Arya Stark": arya = arya + 1
+  if tokens[4]=="Jon Snow": 
+    jon = jon + 1
+
+file.close()
+print("Arya killed", arya, "people")
+print("Jon killed", jon, "people")

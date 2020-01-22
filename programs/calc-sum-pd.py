@@ -1,5 +1,11 @@
 import pandas as pd
+import argparse
 
-ratings_df = pd.read_csv('../datasets/the-movies-dataset/ratings.csv.gz',compression='gzip')
+parser = argparse.ArgumentParser()
+parser.add_argument("infile")
+args = parser.parse_args()
 
-print(ratings_df['rating'].mean())
+infile = args.infile
+
+data_df = pd.read_csv(infile)
+print(data_df[data_df.killer.isin(["Arya Stark", "Jon Snow"])].killer.value_counts())
