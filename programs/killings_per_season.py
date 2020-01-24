@@ -1,4 +1,4 @@
-data_file_location = "datasets/deaths-in-gameofthrones/game-of-thrones-deaths-data.csv"
+data_file_location = "../datasets/deaths-in-gameofthrones/game-of-thrones-deaths-data.csv"
 
 season_d = dict()
 
