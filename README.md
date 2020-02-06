@@ -71,7 +71,9 @@ Although we don't make heavy use of version control, you will be introduced to t
 
 #### Additional steps:
 1. Install a _Graphical_ interface to Git from this website: https://desktop.github.com/
-2. [Windows users only] Create or edit a file called `.profile` in your home directory (c:\Users\your_username\\.profile) and add a new line containing the word `cd`
+2. [Windows users only] 
+  a. type `cd` (this will take you to your home directory)
+  b. type `echo cd >> .profile` (this will make sure your home directory is loaded when you start Git Bash)
 
 ## Install Visual Studio Code
 Please install Visual Studio Code from https://code.visualstudio.com/
