@@ -61,11 +61,11 @@ Mac command line is very similar to the Linux command line; however, there are s
 
 1. Please download the following:
 
-Terminus https://www.termius.com/
+Termius https://www.termius.com/
 
 cyberduck https://cyberduck.io/
 
-2. Use "Terminus" to log on to a remote server 
+2. Use "Termius" to log on to a remote server 
 
 IP address: 159.89.155.202
 
