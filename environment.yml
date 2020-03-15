@@ -30,14 +30,14 @@ dependencies:
   - rise     # presentations in jupyter
   - tqdm
   - nbtutor # brings pythontutor into jupyter, execute `%load_ext nbtutor` to load extension, `%%nbtutor` to evaluate cell (`%%nbtutor -r` to reset variables)
+  - jupyter_contrib_nbextensions #used to be under pip, under conda, doesn't require `jupyter contrib nbextension install ...`
+  - jupyter_nbextensions_configurator #enable nb_conda to allow use of custom conda envs
   - pip:
-    - jupyter_contrib_nbextensions
-    - https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
-    - jupyter_nbextensions_configurator #enable nb_conda to allow use of custom conda envs
+    - wget    # easy way to download files
+    #- https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
     - Flask-Testing
     - nbdime # makes it easy to diff rendered notebooks
     - pixiedust
-    - wget    # easy way to download files
     #- google-cloud-firestore # to enable firestore for pusblishing student cell contents
     #- lolviz # visualize data structures (only useful for teaching and learning)
     #- kedro #McKinsey data science template

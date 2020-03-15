@@ -17,11 +17,6 @@ Accept all default prompts, **except** "Add Anaconda to my PATH envrionment vari
 
 Anaconda's distribution of Python is widely used in the industry, particularly among data scientists. This distribution makes it easy to use many libraries and packages for data analysis, building models, visualization, etc.
 
-#### Aditional steps:
-Execute these statements at the terminal (Windows users should use Anaconda Prompt)
-  - `jupyter contrib nbextension install --user`
-  - `jupyter nbextensions_configurator enable --user`
-
 Once installed, please start jupyter notebook and execute code provided below
 1. Start `Anaconda Navigator` and click `Launch` on the panel labeled `Jupyter Notebook`
 2. Create new notebook from the web interface
