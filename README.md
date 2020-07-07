@@ -1,4 +1,4 @@
-# Welcome to University Of Chicago's _Programming For Analytics_ course
+# Welcome to University Of Chicago's _Programming For Analytics_ course 
 This course introduces programming concepts to students who are preparing to study analytics and data science
 
 Please follow the instructions below to get your computer ready for this class.
