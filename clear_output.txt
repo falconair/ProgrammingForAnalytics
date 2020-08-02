@@ -1,0 +1,1 @@
+jupyter nbconvert *.ipynb --to notebook --ClearOutputPreprocessor.enabled=True --inplace
