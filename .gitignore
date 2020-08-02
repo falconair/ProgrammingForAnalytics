@@ -7,4 +7,5 @@
 .ipynb_checkpoints
 .DS_Store
 .vscode
+postcell.conf
 __pycache__/
