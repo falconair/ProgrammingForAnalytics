@@ -1,9 +1,4 @@
 Student names:
-Jim
-John
-Joe
-Sally
-Maddy
 Rupa
 Brandon
 Nikhil
