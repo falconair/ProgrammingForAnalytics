@@ -4,6 +4,7 @@
 *.csv
 *.feather
 *.parquet
+*.joblib
 .ipynb_checkpoints
 .DS_Store
 .vscode
