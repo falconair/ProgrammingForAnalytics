@@ -6,14 +6,14 @@ Please follow the instructions below to get your computer ready for this class.
 _Note Mac users: Once software is downloaded, if you double click to launch it, you may get permission errors. Try to right click on the downloaded software, pick "open" and continue. (Apple is trying to protect you from accidentally starting malware/virus)_
 
 ## Install Python (anaconda distribution)
-Please install Python 3.x from this website: https://www.anaconda.com/distribution/
-(do not install 2.7)
+Please install Python from this website: https://www.anaconda.com/distribution/
+(modern computers are 64 bit so please pick that option)
 
 Mac users:
 Accept all default prompts
 
 Windows users:
-Accept all default prompts, **except** "Add Anaconda to my PATH envrionment variable." Make sure this is checked.
+Accept all default prompts
 
 Anaconda's distribution of Python is widely used in the industry, particularly among data scientists. This distribution makes it easy to use many libraries and packages for data analysis, building models, visualization, etc.
 
