@@ -9,4 +9,5 @@
 .DS_Store
 .vscode
 postcell.conf
+postcell.log
 __pycache__/
