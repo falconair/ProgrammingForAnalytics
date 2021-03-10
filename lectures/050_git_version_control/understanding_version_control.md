@@ -40,6 +40,7 @@ https://github.com/pandas-dev/pandas/issues
 
 * https://github.com/wesm
 * https://github.com/hadley
+* https://github.com/falconair
 
 ---
 
