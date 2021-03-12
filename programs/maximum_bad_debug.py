@@ -6,4 +6,4 @@ def maximum(numbers):
             max_value = num
     return max_value
 
-print(maximm([-1, -2, -3])) # notice vs code is giving you a warning about variable name! 
+print(maximum([-1, -2, -3])) # notice vs code is giving you a warning about variable name! 
