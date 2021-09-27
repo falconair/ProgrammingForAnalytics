@@ -1,7 +1,7 @@
 {
-    "class_id": "PythonForAnalytics_2021Winter",
+    "url" : "https://postcell.io/post_cell",
+    "student_id" : "YOUR_STUDENTS_ENTER_THEIR_NAME_OR_ID_HERE",
     "instructor_id": "doJIH2jibYWOOJyGm6zsDNe93722",
-    "should_send_to_server": "true",
-    "student_id": "TEST_STUDENT",
-    "url": "https://postcell.io/post_cell"
+    "class_id": "programmingforanalytics_2021Fall_monday",
+    "should_send_to_server" : "true"
 }
