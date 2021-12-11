@@ -179,7 +179,7 @@ Given a large file, you can search for specific text using `grep <pattern> <file
 
 For example, given a file containing all characters from the Game of Thrones and their kill stats, you would search for Arya using `grep Arya got_kills.csv`. 
 
-If you wanted to search for everything EXCEPT Arya, the command `grep -V Arya got_kills.csv` will get you what you want.
+If you wanted to search for everything EXCEPT Arya, the command `grep -v Arya got_kills.csv` will get you what you want.
 
 `grep -i arya got_kills.csv` will ignore case and return all lines containing Arya, arya, aRya, etc.
 
@@ -297,7 +297,7 @@ For example, say character names are in column 2 in the file got_killings.csv, m
 #### cp -r
 #### mkdir
 
-
+#### ctrl-c <= kill whatever I'm running
 
 # Tools
 Terminus https://www.termius.com/

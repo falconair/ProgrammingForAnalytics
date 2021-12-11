@@ -1,0 +1,85 @@
+---
+title: "R Markdown Tutorial"
+author: "Shahbaz Chaudhary"
+date: "11/27/2021"
+output: html_document
+---
+
+# Yet another reason why you should be familiar with _Markdown_
+
+While Jupyter is the standard tool for Python data scientists, R Studio and R Markdown are the most popular ways R data scientists develop and share their code.
+
+Markdown allows a simple way to format text. For example, you can have _italics_, **bold** and ~~crossed out~~ text.
+
+You can write lists:
+
+- item 1
+- item 2
+- item 3
+
+You can number your bullets
+
+1. item 1
+2. item 2
+3. item 3
+
+Or create tables
+
+| column A | Column B | Column C |
+| ---     | ---       | ---       |
+| value 1| value 2| value 3|
+| value 4| value 5| value 6|
+| value 7| value 8| value 9|
+
+### But there is more
+
+You can display inline calculations, such as 2 + 2 = `r 2 + 2`!
+
+In fact, you can organize larger chunks of code:
+
+```{r}
+seq(10)
+```
+
+```{r}
+plot(seq(10))
+```
+
+You can control what gets displayed in your final document:
+
+```{r echo=FALSE}
+plot(seq(10))
+```
+
+### Here is a surprise, you can even run Python in RMarkdown (but you need the 'reticulate' library)!
+
+Notice that the following line is not being executed, since there is no '{r}' text.
+
+```
+install.packages('reticulate')
+```
+
+```{python}
+list(range(10))
+```
+
+### Better tables
+By default, R doesn't do a great job of rendering tables
+
+```{r}
+mtcars
+```
+
+The tidyverse set of packages promises to do better
+
+```{r}
+library(tidyverse)
+tibble(mtcars)
+```
+
+However, the `knitr` package does a much better job
+
+```{r}
+library(knitr)
+kable(mtcars)
+```
