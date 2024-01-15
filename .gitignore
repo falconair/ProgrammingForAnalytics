@@ -1,7 +1,6 @@
 *.pyc
 *.gz
 *.zip
-*.csv
 *.feather
 *.parquet
 *.joblib
