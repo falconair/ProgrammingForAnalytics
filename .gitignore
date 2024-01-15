@@ -1,8 +1,4 @@
 *.pyc
-*.gz
-*.zip
-*.feather
-*.parquet
 *.joblib
 .ipynb_checkpoints
 .DS_Store
