@@ -1,10 +1,11 @@
+# This program is used to demonstrate the debugger, shouldn't be used for anything else!
 import gzip
 import random
 
 src_dst = {}
 prev_word = ""
 
-with gzip.open('datasets/shakespeare/shakespeare.txt.gz','rt', encoding='utf8') as infile:
+with gzip.open('../datasets/shakespeare/shakespeare.txt.gz','rt') as infile:
     for line in infile:
         toks = line\
             .strip()\
@@ -20,11 +21,16 @@ with gzip.open('datasets/shakespeare/shakespeare.txt.gz','rt', encoding='utf8') 
 #Randomly pick a word from data
 chosen_word = random.choice(list(src_dst.keys()))
 
-#For each word, pick the following word with probability propotional to its frequency in the src_dst dictionary
-for i in range(1000):
-    distribution = src_dst[chosen_word]
-    pop = list(distribution.keys())
+#Get words and thier distributions
+def get_word_dist(dist):
+    pop     = list(dist.keys())
     weights = list(distribution.values())
+    return pop, weights
+
+#For each word, pick the following word with probability propotional to its frequency in the src_dst dictionary
+for i in range(100):
+    distribution = src_dst[chosen_word]
+    pop, weights = get_word_dist(distribution)
  
     next_word = random.choices(pop, weights=weights)[0]
     chosen_word = next_word
