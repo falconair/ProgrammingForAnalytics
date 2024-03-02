@@ -1,0 +1,14 @@
+2024-03-01 21:39:37,189 - maximum_bad_logging.py - WARNING - This program is being run from the command line
+2024-03-01 21:39:37,189 - maximum_bad_logging.py - INFO - Let us find the maximum value from the following list:
+2024-03-01 21:39:37,189 - maximum_bad_logging.py - DEBUG - num:1, max_value:0
+2024-03-01 21:39:37,189 - maximum_bad_logging.py - DEBUG - max > max_value branch taken. Setting new max_value
+2024-03-01 21:39:37,189 - maximum_bad_logging.py - DEBUG - num:2, max_value:1
+2024-03-01 21:39:37,189 - maximum_bad_logging.py - DEBUG - max > max_value branch taken. Setting new max_value
+2024-03-01 21:39:37,201 - maximum_bad_logging.py - DEBUG - num:3, max_value:2
+2024-03-01 21:39:37,201 - maximum_bad_logging.py - DEBUG - max > max_value branch taken. Setting new max_value
+2024-03-01 21:39:37,201 - maximum_bad_logging.py - INFO - 3
+2024-03-01 21:39:37,201 - maximum_bad_logging.py - INFO - Let us find the maximum value from another list:
+2024-03-01 21:39:37,205 - maximum_bad_logging.py - DEBUG - num:-1, max_value:0
+2024-03-01 21:39:37,205 - maximum_bad_logging.py - DEBUG - num:-2, max_value:0
+2024-03-01 21:39:37,206 - maximum_bad_logging.py - DEBUG - num:-3, max_value:0
+2024-03-01 21:39:37,206 - maximum_bad_logging.py - INFO - 0
