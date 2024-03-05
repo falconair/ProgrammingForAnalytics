@@ -11,20 +11,12 @@
             "level": "DEBUG",
             "formatter": "simple",
             "stream": "ext://sys.stdout"
-        },
-        "file": {
-            "class": "logging.handlers.TimedRotatingFileHandler",
-            "level": "DEBUG",
-            "formatter": "simple",
-            "when": "D",
-            "backupCount": 0,
-            "filename": "./maximum_bad_logging.log"
         }
     },
     "loggers": {
         "root": {
             "level": "DEBUG",
-            "handlers": ["console", "file"]
+            "handlers": ["console"]
         }
     }
 }
