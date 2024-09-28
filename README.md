@@ -1,5 +1,5 @@
-# Lecture notes for "Programming for Analytics", "Python for Analytics" and "Advanced Python For Data Science." 
-This repository contains lecture notes for classes offered by Shahbaz Chaudhary at the University Of Chicago's Masters in Analytics program.
+# Lecture notes for "Programming for Data Science", "Python for Data Science" and "Python for ML Engineering." 
+This repository contains lecture notes for classes offered by Shahbaz Chaudhary at the University Of Chicago's Masters in Applied Data Science program.
 
 ## Class setup
 Please follow the instructions below to get your computer ready for this class.
@@ -7,7 +7,7 @@ Please follow the instructions below to get your computer ready for this class.
 _Note Mac users: Once software is downloaded, if you double click to launch it, you may get permission errors. Try to right click on the downloaded software, pick "open" and continue. (Apple is trying to protect you from accidentally starting malware/virus)_
 
 #### Install Python (anaconda distribution)
-Please install Python from this website: https://www.anaconda.com/distribution/
+Please install Python from this website: https://www.anaconda.com/download/
 (modern computers are 64 bit so please pick that option)
 
 Mac users:
