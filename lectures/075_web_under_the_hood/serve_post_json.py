@@ -1,21 +1,21 @@
 #serve post json
 from datetime import datetime
-from flask import Flask, request, send_from_directory, jsonify
+from fastapi import FastAPI
 
-app = Flask(__name__)
+app = FastAPI()
 
 @app.get('/status')
 def status():
     d = {'status': 'OK'}
-    return jsonify(d)
+    return d
 
-@app.get('/get_time')
+@app.get('/get_time_old')
 def get_time():
     d = {'current_time':datetime.now().strftime("%H:%M")}
-    return jsonify(d)
+    return d
 
-@app.post('/get_churn_probability')
-def get_churn_probability():
+@app.post('/get_churn_probability_old')
+def get_churn_probability_old():
 
     client_properties = request.get_json()
     print(client_properties)
@@ -30,5 +30,16 @@ def get_churn_probability():
     else:
         return jsonify({'churn_prob':0.87})
 
-if __name__=='__main__': 
-    app.run(debug=True, port=5000) #host='0.0.0.0' <= Listen to all traffic, not just local
+@app.post('/get_churn_probability')
+def get_churn_probability(uc_grad):
+
+    #if 'UC_GRAD' not in client_properties:
+    #    pass throw error
+
+    # Our churn model is fake, we don't actually use an ML model :(
+    if uc_grad == "true":
+        return {'churn_prob':0.34}
+    else:
+        return {'churn_prob':0.87}
+
+# fastapi dev serve_post_json.py
