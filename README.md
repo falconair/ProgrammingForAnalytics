@@ -1,4 +1,4 @@
-# Lecture notes for "Programming for Data Science", "Python for Data Science" and "Python for ML Engineering." 
+# Lecture notes for "Programming for Data Science", "Python for Data Science" and "Python for ML Engineering" 
 This repository contains lecture notes for classes offered by Shahbaz Chaudhary at the University Of Chicago's Masters in Applied Data Science program.
 
 ## Class setup

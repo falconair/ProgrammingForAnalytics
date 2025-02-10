@@ -150,7 +150,13 @@ Notice that there is similar to a web url: `https://datascience.uchicago.edu/edu
   diff file1 file2
   ```
 
-### **5. Automating with Loops**
+### **5. `find` files**
+- Compare files:
+  ```bash
+  find . | grep file_pattern
+  ```
+
+### **6. Automating with Loops**
 - Process multiple files:
   ```bash
   for file in *.txt; do echo $file; done
