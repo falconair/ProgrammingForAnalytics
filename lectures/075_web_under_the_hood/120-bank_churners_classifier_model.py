@@ -3,7 +3,7 @@
 
 # # Bank Churners Classifier Model
 
-# In[1]:
+# In[3]:
 
 
 import numpy as np
@@ -28,26 +28,26 @@ from joblib import dump
 
 # #### Read data
 
-# In[2]:
+# In[ ]:
 
 
 data_df = pd.read_csv('../../datasets/credit-card-customers/BankChurners.zip')
 data_df.shape
 
 
-# In[3]:
+# In[ ]:
 
 
 data_df.head()
 
 
-# In[4]:
+# In[ ]:
 
 
 data_df.columns
 
 
-# In[5]:
+# In[ ]:
 
 
 data_df.isna().sum()
@@ -55,7 +55,7 @@ data_df.isna().sum()
 
 # #### Remove columns which should not go into the model
 
-# In[6]:
+# In[ ]:
 
 
 data_df.drop([
@@ -67,7 +67,7 @@ data_df.drop([
 
 # #### Convert categorical columns
 
-# In[7]:
+# In[ ]:
 
 
 #https://medium.com/@sami.yousuf.azad/one-hot-encoding-with-pandas-dataframe-49a304e8507a
@@ -81,13 +81,13 @@ transformed = col_transformer.fit_transform(data_df)
 transformed_df = pd.DataFrame(transformed, columns=col_transformer.get_feature_names_out())
 
 
-# In[8]:
+# In[ ]:
 
 
 transformed_df.head()
 
 
-# In[9]:
+# In[ ]:
 
 
 transformed_df.columns
@@ -95,7 +95,7 @@ transformed_df.columns
 
 # #### Build model
 
-# In[10]:
+# In[ ]:
 
 
 X_train, X_test, y_train, y_test = train_test_split(
@@ -104,7 +104,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     , random_state=1)
 
 
-# In[11]:
+# In[ ]:
 
 
 pipe = pipeline.make_pipeline(
@@ -113,7 +113,7 @@ pipe = pipeline.make_pipeline(
 )
 
 
-# In[12]:
+# In[ ]:
 
 
 #%%time
@@ -123,13 +123,13 @@ y_predict = pipe.predict(X_test)
 pipe.score(X_test, y_test)
 
 
-# In[13]:
+# In[ ]:
 
 
 pipe
 
 
-# In[14]:
+# In[ ]:
 
 
 #pd.DataFrame({'feature':X_train.columns, 'importance':pipe.feature_importances_}).sort_values(by='importance')
@@ -137,14 +137,14 @@ pipe
 
 # #### Save model
 
-# In[15]:
+# In[ ]:
 
 
 #%%time
 dump(pipe, 'bank_churners_classifier_model.joblib')
 
 
-# In[16]:
+# In[ ]:
 
 
 #%ls
@@ -152,19 +152,19 @@ dump(pipe, 'bank_churners_classifier_model.joblib')
 
 # #### Read model
 
-# In[17]:
+# In[ ]:
 
 
 from joblib import load
 
 
-# In[18]:
+# In[ ]:
 
 
 trained_model = load('bank_churners_classifier_model.joblib')
 
 
-# In[19]:
+# In[ ]:
 
 
 trained_model.feature_names_in_
@@ -172,20 +172,20 @@ trained_model.feature_names_in_
 
 # The following columns are categorical
 
-# In[20]:
+# In[ ]:
 
 
 CATEGORICAL_COLS
 
 
-# In[21]:
+# In[ ]:
 
 
 for col in CATEGORICAL_COLS:
     print(col, data_df[col].unique())
 
 
-# In[22]:
+# In[ ]:
 
 
 test_data_df = pd.Series({
@@ -211,31 +211,31 @@ test_data_df = pd.Series({
 }).to_frame().T
 
 
-# In[23]:
+# In[ ]:
 
 
 test_data_df
 
 
-# In[24]:
+# In[ ]:
 
 
 test_data_df.columns
 
 
-# In[25]:
+# In[ ]:
 
 
 trained_model.predict(test_data_df)
 
 
-# In[26]:
+# In[ ]:
 
 
 trained_model.classes_
 
 
-# In[27]:
+# In[ ]:
 
 
 trained_model.predict_proba(test_data_df)
@@ -244,10 +244,10 @@ trained_model.predict_proba(test_data_df)
 # ### Convert this notebook to .py
 # Some students having trouble reading the model so they can run a .py file in their own enviornment and generate the model file using the same env as their web services code
 
-# In[1]:
+# In[ ]:
 
 
-#get_ipython().system('jupyter nbconvert --to python 120-bank_churners_classifier_model.ipynb')
+get_ipython().system('jupyter nbconvert --to python 120-bank_churners_classifier_model.ipynb')
 
 
 # In[ ]:
