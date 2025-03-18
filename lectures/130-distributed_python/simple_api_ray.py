@@ -1,6 +1,11 @@
 
 from fastapi import FastAPI
 from typing import Dict
+from ray import serve
+import ray
+
+#ray.init(address="192.168.12.239:10001") 
+#ray.init(ignore_reinit_error=True)
 
 app = FastAPI()
 
@@ -20,5 +25,12 @@ def fibonacci(n: int):
         fib.append(fib[-1] + fib[-2])
     return fib
 
-# fastapi run simple_api.py
+@serve.deployment
+@serve.ingress(app)
+class FastAPIWrapper:
+    pass
+
+serve.run(FastAPIWrapper.bind(), route_prefix="/")
+
+# python simple_api_ray.py
 # http://localhost:8000/compute?n=10
