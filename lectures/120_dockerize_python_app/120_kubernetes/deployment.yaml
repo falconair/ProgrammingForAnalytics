@@ -1,0 +1,43 @@
+# This Deployment will create and manage 2 replicas of your FastAPI application running in pods, 
+# using your local Docker image called "minimal_server".
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-app
+  labels:                       # Labels to identify the Deployment
+    app: fastapi-app
+spec:                           # Specification for the Deployment
+  replicas: 2                   # Number of replicas to run 
+  selector:                     # Selector to identify the pods managed by this Deployment
+    matchLabels:
+      app: fastapi-app 
+  template:                     # Template for the pods created by this Deployment
+    metadata:
+      labels:
+        app: fastapi-app
+    spec:                       # Specification for the pod
+      containers:               # List of containers in the pod
+      - name: fastapi
+        image: minimal_server:latest   # Name of the Docker image to use
+        imagePullPolicy: IfNotPresent  # Pull the image only if not present locally
+        ports:
+        - containerPort: 8000   # Port on which the FastAPI app will run
+
+# Note: Ensure that the Docker image "minimal_server" is built and available locally before applying this Deployment.
+# You can build the Docker image using:
+#   docker build -t minimal_server .
+
+# Deploy this "Deployment" to your Kubernetes cluster using:
+#   kubectl apply -f deployment.yaml
+
+# To delete this Deployment, use:
+#   kubectl delete deployment fastapi-app
+
+# To check the status of the Deployment, use:
+#   kubectl get deployments [fastapi-app]
+
+# To see the pods created by this Deployment, use:
+#   kubectl get pods [-l app=fastapi-app | -o wide]
+
+# To view detail about a running pod, such as IP addr, docker image, etc., use:
+#  kubectl describe pod <pod-name>
